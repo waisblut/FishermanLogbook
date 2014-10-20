@@ -204,6 +204,7 @@ public class ActivityEvent
         event = (Event) this.getIntent().getSerializableExtra(ah.MYEVENT);
 
         setControlsPortrait();
+        //TESTECHANGEHERE
 
         // ---------------BACKGROUND---------------------------------------------
         // ah.setBackGround(mainView);
