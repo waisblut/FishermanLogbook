@@ -885,7 +885,8 @@ public class ActivityEvent
          */
         private void setDefaultDate()
         {
-            Calendar date = Calendar.getInstance();
+            Calendar date;
+            Calendar.getInstance();
 
             if (getCurrentPickerName().equals(strSTARTDATE))
             {

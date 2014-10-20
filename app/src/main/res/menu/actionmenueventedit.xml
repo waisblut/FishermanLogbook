@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/actionevent_edit"
-        android:icon="@drawable/ic_action_edit"
+        android:icon="@drawable/ic_action_screen_locked"
         android:orderInCategory="10"
         android:showAsAction="always"
         android:title="@string/Edit">
