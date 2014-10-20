@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/list_item_selector"
+    tools:context=".activities.ActivityEventsList$MyListAdapter" >
+
+    <TextView
+        android:id="@+id/itemEvent_txtEvent"
+        style="@style/Fisherman.OrangeMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/itemEvent_ratingBar"
+        android:text="Event Name"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="12sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/itemEvent_txtStartDate"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/itemEvent_ratingBar"
+        style="@style/FishermanRatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/itemEvent_txtStartDate"
+        android:layout_alignRight="@+id/itemEvent_imgIsFavorite"
+        android:gravity="center"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:rating="2.2"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/itemEvent_txtLocation"
+        style="@style/Fisherman.BlueSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemEvent_txtEvent"
+        android:layout_below="@+id/itemEvent_imgIsFavorite"
+        android:text="Location"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/itemEvent_txtStartDate"
+        style="@style/Fisherman.BlueSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/itemEvent_txtLocation"
+        android:layout_below="@+id/itemEvent_txtLocation"
+        android:text="15/05/2013"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/itemEvent_imgIsFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/itemEvent_txtEvent"
+        android:layout_marginRight="14dp"
+        android:src="@drawable/mysolostarratingbar"
+        android:visibility="visible" />
+
+</RelativeLayout> <!-- android:background="@drawable/itemshape" -->

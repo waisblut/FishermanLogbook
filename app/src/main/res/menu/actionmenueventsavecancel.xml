@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/actionevent_save"
+        android:icon="@android:drawable/ic_menu_save"
+        android:orderInCategory="10"
+        android:showAsAction="always"
+        android:title="@string/Save">
+    </item>
+    <item
+        android:id="@+id/actionevent_cancel"
+        android:orderInCategory="200"
+        android:showAsAction="always"
+        android:title="@string/Cancel"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel">
+    </item>
+
+</menu>

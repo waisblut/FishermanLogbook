@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Fisherman Logbook</string>
+    <string name="Cancel">Cancel</string>
+    <string name="Commercial">Commercial</string>
+    <string name="Edit">Edit</string>
+    <string name="Error">Error</string>
+    <string name="Event">Event</string>
+    <string name="Events">Events</string>
+    <string name="Final_Date">Final Date</string>
+    <string name="Fishes">Fishes</string>
+    <string name="Fishes_Caught">Fishes Caught</string>
+    <string name="From">From</string>
+    <string name="ImportExport">Import\n  Export</string>
+    <string name="Moon_Calendar">Moon Calendar</string>
+    <string name="Name">Name</string>
+    <string name="Qtde">Qty</string>
+    <string name="RangeNegative">The selected period is invalid!</string>
+    <string name="Recreational">Recreational</string>
+    <string name="Reports">Reports</string>
+    <string name="Save">Save</string>
+    <string name="Start_Date">Start Date</string>
+    <string name="Temperature">Temperature</string>
+    <string name="To">To</string>
+    <string name="Total">Total</string>
+    <string name="Tournment">Tournment</string>
+    
+    <string name="N">N</string>
+    <string name="NE">NE</string>
+    <string name="E">E</string>
+    <string name="SE">SE</string>
+    <string name="S">S</string>
+    <string name="SW">SW</string>
+    <string name="W">W</string>
+    <string name="NW">NW</string>
+
+    <string-array name="array_Directions">
+        <item name="N">N</item>
+        <item name="NE">NE</item>
+        <item name="E">E</item>
+        <item name="SE">SE</item>
+        <item name="S">S</item>
+        <item name="SW">SW</item>
+        <item name="W">W</item>
+        <item name="NW">NW</item>
+    </string-array>
+    
+    <string-array name="array_eventType">
+        <item>Shuttle Badminton</item>
+        <item>Tennis</item>
+        <item>FootBall</item>
+        <item>Basket Ball</item>
+        <item>Table Tennis</item>
+        <item>Chess</item>
+        <item>Hockey</item>
+    </string-array>
+
+</resources>

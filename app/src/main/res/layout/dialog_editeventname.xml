@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcustom"
+    android:orientation="vertical" >
+
+    <TableRow
+        android:id="@+id/editEventName_trTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/editEventName_txtName"
+            style="@style/Fisherman.Orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EvEnT New NaMe" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/editEventName_trEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="15dp"
+        android:gravity="center" >
+
+        <EditText
+            android:id="@+id/editEventName_edtName"
+            style="@style/Fisherman.BlueMedium"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true" >
+
+            <requestFocus />
+        </EditText>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/editEventName_trButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/editEventName_imgBtnOK"
+            style="@style/FishermanSmallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_action_accept" />
+
+        <ImageButton
+            android:id="@+id/editEventName_imgBtnCancel"
+            style="@style/FishermanSmallButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_action_cancel" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" >
+    </TableRow>
+
+</LinearLayout>

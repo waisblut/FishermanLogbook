@@ -1,0 +1,610 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundcustom"
+    tools:context=".activities.ActivityEvent" >
+
+    <LinearLayout
+        android:id="@+id/event_mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TableRow
+            android:id="@+id/event_trEditEventName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/event_btnEditEventName"
+                    style="@style/FishermanSmallButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="EDiT EVent nAmE"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="10sp" >
+
+                <RatingBar
+                    android:id="@+id/event_Favorite"
+                    style="@style/FishermanSoloStarRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:isIndicator="true"
+                    android:max="1"
+                    android:numStars="1"
+                    android:paddingTop="5dp"
+                    android:progress="1"
+                    android:rating="0"
+                    android:stepSize="1" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider1"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtFrom"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="FrOm: " />
+
+            <Button
+                android:id="@+id/event_btnStartDate"
+                style="@style/FishermanSmallButton"
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="15/05/2010"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/event_btnStartTime"
+                style="@style/FishermanSmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:text="15:35"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtTo"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="tO: " />
+
+            <Button
+                android:id="@+id/event_btnEndDate"
+                style="@style/FishermanSmallButton"
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:singleLine="true"
+                android:text="16/05/2010" />
+
+            <Button
+                android:id="@+id/event_btnEndTime"
+                style="@style/FishermanSmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:text="18:47" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trQtde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtQtde"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="FiShEs:" />
+
+            <Button
+                android:id="@+id/event_btnQtde"
+                style="@style/FishermanSmallButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:lines="2"
+                android:text="999 Fishes\n(clickFORDeTails)" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider2"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trFishingWith1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/event_txtPeopleWith"
+                    style="@style/Fisherman.OrangeSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PeOple WiTH: " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp" >
+
+                <EditText
+                    android:id="@+id/event_edtPeopleWith"
+                    style="@style/Fisherman.GreenMedium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="SeArCh HerE!"
+                    android:inputType="textAutoComplete"
+                    tools:ignore="HardcodedText" >
+                </EditText>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trFishingWith2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <Spinner
+                    android:id="@+id/event_spnPeopleWith"
+                    style="@style/FishermanSmallSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp" />
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider3"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trEventType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtEventType"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="EvEnT TyPe: " />
+
+            <Spinner
+                android:id="@+id/event_spnEventType"
+                style="@style/FishermanSmallSpinner"
+                android:layout_width="163sp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider4"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDayCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtDayTemp"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="TEmP:" />
+
+            <SeekBar
+                android:id="@+id/event_skDayTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="3dp"
+                android:thumb="@drawable/fish_medium_full_blue" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trPressure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtPressure"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="PrEssUre:" />
+
+            <SeekBar
+                android:id="@+id/event_skAirPressure"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trWind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtWind"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="WiNd Dir:" />
+
+            <ImageView
+                android:id="@+id/event_imgDirection"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/arrow_fish" />
+
+            <EditText
+                android:id="@+id/event_edtDirection"
+                style="@style/Fisherman.GreenMedium"
+                android:layout_width="45sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:ems="10"
+                android:gravity="center_vertical|right"
+                android:inputType="number" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/event_txtDegrees"
+                style="@style/Fisherman.GreenMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:gravity="center_vertical|left"
+                android:text="\u00B0" />
+
+            <TextView
+                android:id="@+id/event_txtDirection"
+                style="@style/Fisherman.GreenMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="N*" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trPrecipitation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtWaterTemp"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="WaTer TeMp:" />
+
+            <SeekBar
+                android:id="@+id/event_skWaterTemp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDeph"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtDeph"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="dePh:" />
+
+            <EditText
+                android:id="@+id/event_edtDeph"
+                android:layout_width="60sp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal" >
+            </EditText>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider5"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trHasBoat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <CheckBox
+                android:id="@+id/event_chkHasBoat"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="HasBoaT?" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trNavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtBoat"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="bOaT:" />
+
+            <Spinner
+                android:id="@+id/event_spnBoat"
+                style="@style/FishermanSmallButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trEngine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtEngine"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="EnGiNE:" />
+
+            <Spinner
+                android:id="@+id/event_spnEngine"
+                style="@style/FishermanSmallButton"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="7dp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trNavFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtNavFrom"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="FrOm: " />
+
+            <Button
+                android:id="@+id/event_btnNavStartDate"
+                style="@style/FishermanSmallButton"
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="15/05/2010" />
+
+            <Button
+                android:id="@+id/event_btnNavStartTime"
+                style="@style/FishermanSmallButton"
+                android:layout_width="85sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="15:35" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trNavTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtNavTo"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="65sp"
+                android:layout_height="wrap_content"
+                android:text="tO: " />
+
+            <Button
+                android:id="@+id/event_btnNavEndDate"
+                style="@style/FishermanSmallButton"
+                android:layout_width="120sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:text="16/05/2010" />
+
+            <Button
+                android:id="@+id/event_btnNavEndTime"
+                style="@style/FishermanSmallButton"
+                android:layout_width="85sp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="18:47" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider6"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trRatingBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|center_horizontal"
+            android:paddingRight="10sp" >
+
+            <RatingBar
+                android:id="@+id/event_ratingBar"
+                style="@style/FishermanRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:rating="2.2"
+                android:stepSize="1" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trDivider7"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@drawable/fishermandivider" >
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trComments1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left" >
+
+            <TextView
+                android:id="@+id/event_txtComments"
+                style="@style/Fisherman.OrangeSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:text="CommEnTs:" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/event_trComments2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left" >
+
+            <EditText
+                android:id="@+id/event_edtComments"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/white"
+                android:ems="10"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:minLines="10"
+                android:singleLine="false" >
+            </EditText>
+        </TableRow>
+    </LinearLayout>
+
+</ScrollView>
