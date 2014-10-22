@@ -13,6 +13,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentActivity;
 import android.util.TypedValue;
@@ -177,14 +178,7 @@ public class ActivityEvent
         Toast.makeText(this, item.getTitle() + " Clicked!", Toast.LENGTH_SHORT).show();
         // TODO create a Confirm MENU
 
-        if (item.getItemId() == R.id.actionevent_edit)
-        {
-            mCanEdit = true;
-        }
-        else
-        {
-            mCanEdit = false;
-        }
+        mCanEdit = item.getItemId() == R.id.actionevent_edit;
 
         setClickable(mCanEdit);
         invalidateOptionsMenu();
@@ -816,6 +810,7 @@ public class ActivityEvent
         int mMonth = 0;
         int mDay = 0;
 
+        @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState)
         {
@@ -934,20 +929,15 @@ public class ActivityEvent
         int mHourOfDay = mCal.get(Calendar.HOUR_OF_DAY);
         int mMinute = mCal.get(Calendar.MINUTE);
 
+        @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState)
         {
             setDefaultTime();
 
             // Create a new instance of DatePickerDialog
-            TimePickerDialog d = new TimePickerDialog(getActivity(),
-                                                      2,
-                                                      this,
-                                                      mHourOfDay,
-                                                      mMinute,
-                                                      true);
 
-            return d;
+            return new TimePickerDialog(getActivity(), 2, this, mHourOfDay, mMinute, true);
         }
 
         private void setDefaultTime()

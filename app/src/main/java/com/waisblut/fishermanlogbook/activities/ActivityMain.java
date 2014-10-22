@@ -33,24 +33,18 @@ public class ActivityMain
 {
     ActivityHelper ah = new ActivityHelper();
 
-    View mainView = null;
+    View mainView;
 
-    ImageButton btnAddEvent = null;
-    ImageButton btnViewReport = null;
+    ImageButton btnAddEvent, btnViewReport;
 
-    TextView txtAddEvent = null;
-    TextView txtViewReport = null;
-    TextView txtImportExport = null;
-    TextView txtNumberFishCount = null;
-    TextView txtFishCaught = null;
+    TextView txtAddEvent, txtViewReport, txtImportExport, txtNumberFishCount, txtFishCaught;
 
-    TableRow rowAddEvent = null;
-    TableRow rowViewReport = null;
+    TableRow rowAddEvent, rowViewReport;
 
-    DataSourceEvent dsEvent = null;
-    DataSourceDetailEventFish dsEventFish = null;
-    DataSourceFish dsFish = null;
-    DataSourcePeople dsPeople = null;
+    DataSourceEvent dsEvent;
+    DataSourceDetailEventFish dsEventFish;
+    DataSourceFish dsFish;
+    DataSourcePeople dsPeople;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -146,7 +140,7 @@ public class ActivityMain
         p8.setId(8);
 
         p1.setName("Antonio");
-        p2.setName("Ant�nio");
+        p2.setName("Antônio");
         p3.setName("Barbara");
         p4.setName("Beatriz");
         p5.setName("Josefino");
@@ -194,7 +188,7 @@ public class ActivityMain
         e1.setFishes(f6, 1, 3.1f, 9.3f);
         e1.setFishes(f7, 18, 18.1f, 12.88f);
 
-        e1.setLocationName("Florianopolis");
+        e1.setLocationName("Florianópolis");
         e1.setRating(2);
         e1.setStartDateTime("01/08/2013 15:03");
         e1.setEndDateTime("15/11/2014 15:04");
@@ -210,7 +204,7 @@ public class ActivityMain
         e2.setWindDirection(45);
         e2.setFishes(f1, 15, 15f, 8f);
         e2.setFishes(f3, 5, 35f, 99f);
-        e2.setLocationName("Lagoa da concei��o");
+        e2.setLocationName("Lagoa da conceição");
         e2.setRating(3);
         e2.setStartDateTime("15/08/2012 11:19");
         e2.setEventType(EnumEventType.COMMERCIAL);
@@ -222,7 +216,7 @@ public class ActivityMain
         e3.setWindDirection(77);
         e3.setFishes(f3, 15, 150f, 1.99f);
         e3.setFishes(f3, 5, 200f, 1.45f);
-        e3.setLocationName("Rio Tiet�");
+        e3.setLocationName("Rio Tietê");
         e3.setRating(4);
         e3.setStartDateTime("");
         e3.setEventType(EnumEventType.RECREATIONAL);
@@ -232,7 +226,7 @@ public class ActivityMain
         e4.setName("Com os Amigos");
         e4.setId(4);
         e4.setWindDirection(23);
-        e4.setLocationName("Guaruj�");
+        e4.setLocationName("Guarujá");
         e4.setRating(1);
         e4.setStartDateTime("01/08/1999 00:00");
         e4.setEventType(EnumEventType.RECREATIONAL);

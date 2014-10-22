@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgroundcustom"
-    android:orientation="vertical" >
+    android:orientation="vertical">
 
     <TableRow
         android:id="@+id/editEventName_trTitle"
@@ -12,7 +13,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="15dp"
         android:layout_marginTop="5dp"
-        android:gravity="center" >
+        android:gravity="center">
 
         <TextView
             android:id="@+id/editEventName_txtName"
@@ -28,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginBottom="15dp"
-        android:gravity="center" >
+        android:gravity="center">
 
         <EditText
             android:id="@+id/editEventName_edtName"
@@ -38,7 +39,7 @@
             android:ems="10"
             android:inputType="text"
             android:padding="10dp"
-            android:singleLine="true" >
+            android:singleLine="true">
 
             <requestFocus />
         </EditText>
@@ -49,15 +50,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center" >
+        android:gravity="center">
 
         <ImageButton
             android:id="@+id/editEventName_imgBtnOK"
             style="@style/FishermanSmallButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
             android:layout_marginRight="5dp"
-            android:src="@drawable/ic_action_accept" />
+            android:src="@drawable/ic_action_accept"
+            tools:ignore="ContentDescription" />
 
         <ImageButton
             android:id="@+id/editEventName_imgBtnCancel"
@@ -65,13 +68,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_action_cancel" />
+            android:layout_marginStart="5dp"
+            android:src="@drawable/ic_action_cancel"
+            tools:ignore="ContentDescription" />
     </TableRow>
 
     <TableRow
         android:id="@+id/tableRow1"
         android:layout_width="match_parent"
-        android:layout_height="15dp" >
-    </TableRow>
+        android:layout_height="15dp"></TableRow>
 
 </LinearLayout>

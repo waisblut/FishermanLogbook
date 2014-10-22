@@ -32,10 +32,6 @@
             android:label="@string/Event"
             android:configChanges="orientation|screenSize|keyboardHidden" >
         </activity>
-        <activity
-            android:name="com.waisblut.fishermanlogbook.activities.ActivityFishList"
-            android:label="@string/Event" >
-        </activity>
     </application>
 
 </manifest>

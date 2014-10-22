@@ -1,63 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
     android:layout_height="match_parent"
-    android:background="@android:color/black" >
+    android:background="@android:color/black">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/itemFish_btnAmount"
+        style="@style/FishermanButtonTinyText"
+        android:layout_width="45dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="999" />
 
-        <Button
-            android:id="@+id/itemFish_btnAmount"
-            android:layout_width="45dp"
-            android:layout_height="wrap_content"
-            style="@style/FishermanButtonTinyText"
-            android:text="999" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/itemFish_btnName"
+        style="@style/FishermanButtonTinyText"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemFish_btnAmount"
+        android:layout_toRightOf="@+id/itemFish_btnAmount"
+        android:text="Tainha VeRdE" />
 
-        <Button
-            android:id="@+id/itemFish_btnName"
-            android:layout_width="120dp"
-            android:layout_height="wrap_content"
-            style="@style/FishermanButtonTinyText"
-            android:text="Tainha VeRdE" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/itemFish_btnWeight"
+        style="@style/FishermanButtonTinyText"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemFish_btnName"
+        android:layout_toRightOf="@+id/itemFish_btnName"
+        android:text="150kG" />
 
-        <Button
-            android:id="@+id/itemFish_btnWeight"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            style="@style/FishermanButtonTinyText"
-            android:text="150kG" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
+    <Button
+        android:id="@+id/itemFish_btnEdit"
+        style="@style/FishermanButtonTinyText"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
-        <Button
-            android:id="@+id/itemFish_btnEdit"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            style="@style/FishermanButtonTinyText"
-            android:text="EditMe" />
-
-    </LinearLayout>
-
-</LinearLayout>
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/itemFish_btnWeight"
+        android:layout_toRightOf="@+id/itemFish_btnWeight"
+        android:text="EditMe" />
+</RelativeLayout>

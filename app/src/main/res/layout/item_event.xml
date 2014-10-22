@@ -4,27 +4,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/list_item_selector"
-    tools:context=".activities.ActivityEventsList$MyListAdapter" >
+    tools:context=".activities.ActivityEventsList$MyListAdapter">
 
     <TextView
         android:id="@+id/itemEvent_txtEvent"
         style="@style/Fisherman.OrangeMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/itemEvent_ratingBar"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/itemEvent_ratingBar"
         android:text="Event Name"
         android:textAppearance="?android:attr/textAppearanceSmall" />
-
-    <LinearLayout
-        android:id="@+id/lin1"
-        android:layout_width="match_parent"
-        android:layout_height="12sp"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/itemEvent_txtStartDate"
-        android:orientation="vertical" >
-    </LinearLayout>
 
     <RatingBar
         android:id="@+id/itemEvent_ratingBar"
@@ -32,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/itemEvent_txtStartDate"
+        android:layout_alignEnd="@+id/itemEvent_imgIsFavorite"
         android:layout_alignRight="@+id/itemEvent_imgIsFavorite"
         android:gravity="center"
         android:isIndicator="true"
@@ -45,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/itemEvent_txtEvent"
+        android:layout_alignStart="@+id/itemEvent_txtEvent"
         android:layout_below="@+id/itemEvent_imgIsFavorite"
         android:text="Location"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -54,7 +49,8 @@
         style="@style/Fisherman.BlueSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/itemEvent_txtLocation"
+        android:layout_alignLeft="@+id/itemEvent_txtEvent"
+        android:layout_alignStart="@+id/itemEvent_txtEvent"
         android:layout_below="@+id/itemEvent_txtLocation"
         android:text="15/05/2013"
         android:textAppearance="?android:attr/textAppearanceSmall" />
@@ -63,10 +59,13 @@
         android:id="@+id/itemEvent_imgIsFavorite"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:layout_alignTop="@+id/itemEvent_txtEvent"
+        android:layout_marginEnd="14dp"
         android:layout_marginRight="14dp"
         android:src="@drawable/mysolostarratingbar"
-        android:visibility="visible" />
+        android:visibility="visible"
+        tools:ignore="ContentDescription" />
 
 </RelativeLayout> <!-- android:background="@drawable/itemshape" -->

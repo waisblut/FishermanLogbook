@@ -57,4 +57,12 @@
         <item>Hockey</item>
     </string-array>
 
+    <string name="FONT_ABEAKRG">abeakrg.ttf</string>
+    <string name="FONT_Basic">BasicLig_ltd.ttf</string>
+    <string name="FONT_Digital">digital.ttf</string>
+    <string name="FONT_LCD">lcdphone.ttf</string>
+    <string name="FONT_Neometric">Neometric-Medium.otf</string>
+    <string name="FONT_Remington">Remington-Noiseless.ttf</string>
+    <string name="FONT_Ubuntu">Ubuntu-Title.ttf</string>
+
 </resources>
