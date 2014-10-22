@@ -5,7 +5,7 @@ public enum EnumFonts
     RN("Remington-Noiseless.ttf"),
     BASIC("BasicLig_ltd.ttf"),
     DIGITAL("lcdphone.ttf"),
-    ABEAKRG("ABEAKRG.TTF");
+    ABEAKRG("abeakrg.ttf");
 
     protected String code;
 
